@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Portfolio of Jason Egipto | Front End Developer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="theme-color" content="#e74c3c">
+    <!--SEO-->
+    <meta name="description" content="Portfolio of Jason Egipto - Web Developer">
+    <meta name="keywords" content="jason, egipto, jason egipto, web design, web development, javascript, css3, css, html5, portfolio, portfolio designer">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:700" rel="stylesheet">
+    <script src="https://use.fontawesome.com/c44807f6a9.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section id="nav" class="menu-left">
+        <a class="closeBtn" onclick="closeNav()">&times;</a>
+
+        <div id="menu-content">
+
+            <a id="header-Name" class="header-info-general-style scroll" href="#portfolio-content" onclick="closeNav()">
+              <h3>Jason Egipto</h3>
+            </a>
+            <a class="header-Info header-info-general-style scroll" href="#banner" onclick="closeNav()">
+              <h3>About</h3>
+            </a>
+            <a class="header-Info header-info-general-style scroll" href="#contact-container" onclick="closeNav()"><h3>Contact</h3>
+            </a>
+
+        </div><!--End menu-content-->
+      </section><!--End menu-left-->
+      <a class="openBtn" onclick="openNav()"><i href="#" id= "menuDown" class="fa fa-chevron-circle-down fa-2x" aria-hidden="true"></i></a>
+
+        <section id="portfolio-content">
+          <div id="image-container">
+            <div id="img-caption">
+              <p id="logo" class="img-txt">Front End Developer</p>
+              <p id="small-logo" class="img-txt">Creating with passion</p>
+            </div><!--End img-caption-->
+          </div><!--End image-container-->
+
+          <div id="portfolio-body">
+            <section id="banner-container">
+              <div id="banner">
+                <div id="wrapper-about-par">
+                  <p>Hey! I'm Jason.<br>
+                    I speak Hebrew and English and have a BA in Psychology. On my spare time I do calisthenics, educate myself with a nice book or grab a beer with a friend.<br>
+                    These are my personal projects - My "baby steps" :)
+                  </p>
+                </div><!--End wrapper-about-par-->
+              </div><!--End Banner-->
+
+              <section id="imgs-row">
+                <div class="row-cell">
+                  <img class="img-port" src="img/conference-bootstrap.png" alt="Conference site">
+                  <p>A conference landing page with Bootstrap.</p>
+                  <a class="github-button" href="https://github.com/ic0c0/Bootstrap-4" target="_blank">Github</a>
+                </div>
+                <div class="row-cell">
+                  <img class="img-port" src="img/city-guide-layout.png" alt="City guide">
+                  <p>A simple city guide with HTML5 and CSS.</p>
+                  <a class="github-button" href="https://github.com/ic0c0/CSS-Layout" target="_blank">Github</a>
+                </div>
+                <div class="row-cell">
+                  <img class="img-port" src="img/tahoe-basic.png" alt="Lake Tahoe">
+                  <p>A responsive design for different screen sizes.</p>
+                  <a class="github-button" href="https://github.com/ic0c0/CSS-Basics" target="_blank">Github</a>
+                </div><!--End row-cell-->
+              </section><!--End imgs-row-->
+            </section> <!--End banner-container-->
+
+            <div id="contact-container">
+              <section id="get-in-touch">
+                <h2>get in touch</h2>
+                <p>It would be awesome to hear from you.</p>
+              </section>
+              <section id="contact-form">
+                <form action="https://formspree.io/jasonegipto@gmail.com"
+                    method="POST">
+                  <div class="form-row ">
+                    <input type="text" id="form-name" name="form-name" placeholder="Name" required>
+                  </div>
+                  <div class="form-row">
+                    <input type="email" id="form-id" name="_replyto" placeholder="Email" required>
+                  </div>
+                  <div class="form-row">
+                    <textarea id="form-msg" name="form-msg" placeholder="Message" required></textarea>
+                  </div>
+                  <div class="form-row">
+                    <button type="submit">Send</button>
+                  </div>
+                </form>
+              </section>
+            </div><!--End contact-container-->
+        </div><!--End portfolio-body-->
+      </section><!--End portfolio-content-->
+    </div><!--End wrapper-->
+    <footer class="footer-container">
+      <div class="footer">
+        <p>Created and designed by Jason Egipto &copy; 2017</p>
+      </div>
+    </footer>
+      <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+      <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

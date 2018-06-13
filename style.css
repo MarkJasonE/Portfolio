@@ -1,0 +1,412 @@
+/********** General css **********/
+
+body, html {
+padding: 0;
+margin: 0;
+font-family: 'Ubuntu', sans-serif;
+}
+h3 {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  width: 100%;
+}
+
+/********** Left Nav **********/
+/*.closeBtn, .openBtn {
+  display: none;
+} */
+.menu-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+}
+#menu-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+  #menu-content a {
+    display: block;
+  }
+.header-Info h3 {
+  transition: all 0.2s ease-out;
+}
+
+.header-Info h3:hover {
+  background-color: #ECEFE6;
+}
+#header-Name {
+  color: #ECEFE6;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 20px;
+}
+#header-Name h3:after {
+  display: block;
+  content: " ";
+  height: 2px;
+  width: 7rem;
+  background-color: #ECEFE6;
+  margin: 15px auto 0 auto;
+}
+
+.header-Info {
+  color: #E56969;
+  font-size: 20px;
+}
+.header-info-general-style h3 {
+  margin: 30px 0;
+  padding: 30px 0;
+}
+.menu-left .closeBtn {
+position: absolute;
+top: 20px;
+right: 50px;
+font-size: 50px;
+color: #E56969;
+}
+.closeBtn {
+  cursor: pointer;
+}
+.closeBtn:hover {
+  color: #ECEFE6;
+}
+.openBtn {
+  position: absolute;
+  top: 30px;
+  left: 50px
+}
+#menuDown {
+  cursor: pointer;
+  color: #E56969;
+  position: fixed;
+  z-index: 10;
+}
+#menuDown:hover {
+  color: #262626;
+}
+/********** Image Banner **********/
+
+.img-txt {
+  margin: 0;
+  color: #fff;
+}
+#img-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#logo {
+  font-size: 3.9em;
+}
+#small-logo {
+  font-size: 1.5em;
+}
+
+#image-container {
+  height: 100vh;
+  background-image: url("img/cover-mini.jpg");
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+  position: relative;
+  z-index: -1;
+}
+/********** Portfolio **********/
+
+#banner-container {
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+#banner {
+  text-align: center;
+  padding: 50px 100px 30px 100px;
+  background-color: #e3e7e8;
+}
+#wrapper-about-par {
+  width: 850px;
+  margin: auto;
+}
+#banner p {
+  color: #262626;
+  line-height: 60px;
+}
+#imgs-row {
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+  background-color: #2c3e50;
+  padding: 30px 30px;
+}
+
+.row-cell {
+  margin: 40px 0px;
+  flex-grow: 1;
+  width: 30%;
+  text-align: center;
+}
+.row-cell p{
+  color: #fff;
+  padding: 20px 20px;
+}
+.row-cell a:visited {
+  color: #fff;
+}
+.img-port {
+  height: 500px;
+  width: 90%;
+  box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.4);
+  border-radius: 15px;
+  filter: grayscale(1);
+}
+.img-port:hover {
+  filter: none;
+  transition: all 0.5s ease-in-out;
+}
+.github-button {
+  display: inline-block;
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 11px 47px;
+  border-radius: 5px;
+  box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
+  transition: all ease-in-out 300ms;
+}
+.github-button:hover {
+  background-color: #d33221;
+  box-shadow: 0px 37px 20px -10px rgba(0,0,0,0.2);
+  transform: translateY(-10px);
+}
+
+/********** Contact **********/
+#contact-container {
+  padding: 48px 0px;
+  background-color: #e74c3c;
+  text-align: center;
+  box-sizing: border-box;
+}
+#contact-container h2 {
+  color: #fff;
+  font-size: 38px;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+h2:after {
+  display: block;
+  content: " ";
+  height: 2px;
+  width: 7rem;
+  background-color: #fff;
+  margin: 15px auto 0 auto;
+}
+#contact-container p {
+  color: #fff;
+}
+
+/********** Form **********/
+.form-row {
+  display: block;
+  margin: 10px;
+}
+
+input {
+  width: 290px;
+  padding: 8px;
+}
+textarea {
+  width: 290px;
+  padding: 9px;
+  height: 70px;
+}
+input, textarea, button {
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #fff;
+}
+button {
+  width: 130px;
+  padding: 10px 8px;
+  background-color: #2c3e50;
+  color: #fff;
+  cursor: pointer;
+}
+input:focus, textarea:focus {
+  background-color: #2c3e50;
+  color: #fff;
+  border-color: #405d7a;
+}
+.footer-container {
+  text-align: center;
+  background-color: #2c3e50;
+}
+.footer-container p {
+  margin: 0;
+  padding: 10px 0;
+  color: #fff;
+}
+/********** Media Queries **********/
+
+@media screen and (max-width: 500px) {
+
+  /********** Left Nav **********/
+
+  .openBtn {
+    top: 30px;
+    left: 0px;
+  }
+    /********** Image Banner **********/
+
+    #logo {
+      font-size: 3.5em;
+    }
+    #small-logo {
+      font-size: 1.3em;
+    }
+
+    /********** Portfolio **********/
+
+    #banner {
+      text-align: left;
+      padding: 10px 20px;
+      background-color: #e3e7e8;
+    }
+    #wrapper-about-par {
+      width: auto;
+    }
+    #banner p {
+      color: #262626;
+      line-height: 60px;
+    }
+    #imgs-row {
+      height: auto;
+      display: flex;
+      flex-flow: row wrap;
+      background-color: #2c3e50;
+      padding: 30px 30px;
+    }
+    .row-cell {
+      margin: 20px 0px;
+      width: 100%;
+    }
+
+    .img-port {
+      height: 350px;
+      width: 100%;
+    }
+
+    /********** Form **********/
+
+    .footer-container p {
+      font-size: 14px;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 767px) {
+
+  /********** Left Nav **********/
+
+  .openBtn {
+    left: 15px
+  }
+  /********** Image Banner **********/
+  .img-txt {
+    letter-spacing: 4px;
+  }
+  #logo {
+    font-size: 3.7em;
+  }
+  #small-logo {
+    font-size: 1.4em;
+  }
+
+  /********** Portfolio **********/
+
+  #banner {
+    text-align: left;
+    padding: 30px 40px;
+    background-color: #e3e7e8;
+  }
+  #wrapper-about-par {
+    width: auto;
+  }
+  #imgs-row {
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #2c3e50;
+    padding: 30px 50px;
+  }
+  .row-cell {
+    margin: 20px 0px;
+    width: 100%;
+  }
+
+  .img-port {
+    height: 550px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1251px) {
+
+  /********** Left Nav **********/
+
+  .openBtn {
+    left: 20px
+  }
+  /********** Image Banner **********/
+
+  .img-txt {
+    letter-spacing: 6px;
+  }
+  #logo {
+    font-size: 2.3em;
+    padding-bottom: 8px;
+  }
+  #small-logo {
+    font-size: 1.2em;
+  }
+  /********** Portfolio **********/
+
+  #banner {
+    padding: 50px;
+    background-color: #e3e7e8;
+  }
+  #wrapper-about-par {
+    width: auto;
+  }
+  #banner p {
+    line-height: 50px;
+  }
+  #imgs-row {
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #2c3e50;
+    padding: 30px 50px;
+  }
+
+  .row-cell {
+    margin: 20px 0px;
+    width: 48%;
+  }
+
+  .img-port {
+    width: 85%;
+  }
+}
